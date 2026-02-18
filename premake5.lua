@@ -16,6 +16,7 @@ project "GLFW"
     }
 
     filter "system:windows"
+        flags { "MultiProcessorCompile" }
         systemversion "latest"
 
         defines {
