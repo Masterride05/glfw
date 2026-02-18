@@ -1,7 +1,7 @@
 ﻿  cocoa_time.c
   context.c
-C:\VSProjects\ElecSim\vendor\glfw\src\context.c(408,10): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   egl_context.c
+C:\VSProjects\ElecSim\vendor\glfw\src\context.c(408,10): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   glx_context.c
   init.c
 C:\VSProjects\ElecSim\vendor\glfw\src\init.c(189,20): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

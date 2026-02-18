@@ -104,3 +104,6 @@ tests/windows
 
 bin
 bin-int
+
+*.obj
+*.pdb
