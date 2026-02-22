@@ -36,8 +36,8 @@ project "GLFW"
             "opengl32"
         }
         postbuildcommands {
-            {"{COPY} %{cfg.buildtarget.relpath} ../../bin/" .. outputdir}
-            -- {"{COPY} %{cfg.buildtarget.relpath} ../../"},
+            { "{MKDIR} %{wks.location}bin/" .. outputdir, 
+            "{COPYFILE} %{cfg.buildtarget.abspath} %{wks.location}bin/" .. outputdir },
         }
 
     filter "system:linux"
