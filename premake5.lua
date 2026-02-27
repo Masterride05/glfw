@@ -59,5 +59,3 @@ project "GLFW"
             "pthread",
             "GL"
         }
-
-    filter {}
