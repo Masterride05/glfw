@@ -2,11 +2,15 @@ project "GLFW"
     kind "SharedLib"
     language "C"
     staticruntime "off"
+    
+    androidsdkversion "28"
+    androidminsdkversion "25"
 
     targetdir ("bin/" .. outputdir)
     objdir ("bin-int/" .. outputdir)
 
     files {
+        "./",
         "src/**.c",
         "include/**.h"
     }
@@ -37,7 +41,7 @@ project "GLFW"
         }
         postbuildcommands {
             { "{MKDIR} %{wks.location}bin/" .. outputdir, 
-            "{COPYFILE} %{cfg.buildtarget.abspath} %{wks.location}bin/" .. outputdir },
+              "{COPYFILE} %{cfg.buildtarget.abspath} %{wks.location}bin/" .. outputdir },
         }
 
     filter "system:linux"
